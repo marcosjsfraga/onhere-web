@@ -5,7 +5,6 @@ import {
     RiArrowDownSLine,
     RiArrowUpSLine,
     RiMenuUnfoldFill,
-    RiMotorbikeFill,
     RiRoadMapLine
 } from 'react-icons/ri'
 import { AiOutlineDashboard } from 'react-icons/ai'
@@ -13,6 +12,7 @@ import { SiOpenstreetmap } from 'react-icons/si'
 import { GoClippy, GoDeviceMobile, GoGraph } from 'react-icons/go'
 
 export const MenuData = [
+    // Dashboard
     {
         title: 'Dashboard',
         path: '/dashboard',
@@ -20,6 +20,7 @@ export const MenuData = [
         iconClosed: <RiArrowDownSLine />,
         iconOpened: <RiArrowUpSLine />,
     },
+    // Planejamento
     {
         title: 'Planejamento',
         path: '#',
@@ -34,6 +35,7 @@ export const MenuData = [
             },
         ]
     },
+    // Pedidos
     {
         title: 'Pedidos',
         path: '#',
@@ -48,6 +50,7 @@ export const MenuData = [
             },
         ]
     },
+    // Roteirização
     {
         title: 'Roteirização',
         path: '#',
@@ -62,6 +65,7 @@ export const MenuData = [
             },
         ]
     },
+    // Prestadores
     {
         title: 'Prestadores',
         path: '#',
@@ -86,6 +90,7 @@ export const MenuData = [
             },
         ]
     },
+    // Mobilidade
     {
         title: 'Mobilidade',
         path: '#',
@@ -100,6 +105,7 @@ export const MenuData = [
             },
         ]
     },
+    // Rastreamento
     {
         title: 'Rastreamento',
         path: '#',
@@ -114,6 +120,7 @@ export const MenuData = [
             },
         ]
     },
+    // Gestão
     {
         title: 'Gestão',
         path: '#',

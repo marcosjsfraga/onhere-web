@@ -18,6 +18,7 @@ export const HeaderContent = styled.div`
     /* Stylize 1º image */
     > img {
         height: 55px;
+        margin-left: 50px;
     }
 
     button {
@@ -47,7 +48,6 @@ export const MenuContainer = styled.div`
         top: 6px;
         margin-right: 25px;
     }
-
 `;
 
 export const Profile = styled.div`

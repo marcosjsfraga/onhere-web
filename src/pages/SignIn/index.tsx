@@ -1,9 +1,8 @@
 import React, { useCallback, useRef } from 'react';
-import { FiMail } from 'react-icons/fi';
 import { HiOutlineOfficeBuilding, HiLockClosed, HiMail } from 'react-icons/hi';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/web';
-import * as Yup from 'yup';
+// import * as Yup from 'yup';
 import { Link, useHistory } from 'react-router-dom';
 // import { useAuth } from '../../hooks/auth';
 // import { useToast } from '../../hooks/toast';
@@ -69,8 +68,7 @@ const SignIn: React.FC = () => {
                 });
             }
             */
-        },
-        [],
+        }, [history],
     );
 
     return (

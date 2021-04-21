@@ -6,7 +6,7 @@ import { MenuData } from './MenuData'
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 
-import { Nav, NavIcon, SidebarNav, SidebarWrap } from './styles';
+import { NavIcon, SidebarNav, SidebarWrap, NavIconClose } from './styles';
 import SubMenu from './SubMenu';
 
 const Sidebar = () => {
@@ -16,20 +16,21 @@ const Sidebar = () => {
         setSidebar(!sidebar)
     }
 
+    // console.log(sidebar)
+
     return (
         <>
-            <Nav>
-                <NavIcon to='#'>
-                    <FaIcons.FaBars onClick={showSidebar} />
-                </NavIcon>
-            </Nav>
+            <NavIcon to='#' sidebar={sidebar}>
+                <FaIcons.FaBars onClick={showSidebar} />
+            </NavIcon>
+
             <SidebarNav sidebar={sidebar} >
                 <SidebarWrap>
-                    <NavIcon to='#'>
+                    <NavIconClose to='#' sidebar={sidebar} >
                         <AiIcons.AiOutlineClose onClick={showSidebar} />
-                    </NavIcon>
+                    </NavIconClose>
                     {MenuData.map((item, index) => {
-                        return <SubMenu item={item} />
+                        return <SubMenu key={item.title} item={item} />
                     })}
                 </SidebarWrap>
             </SidebarNav>

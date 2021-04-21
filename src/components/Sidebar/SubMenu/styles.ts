@@ -5,11 +5,12 @@ export const SidebarLink = styled(Link)`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 15px;
     list-style-type: none;
     height: 40px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     color: #1A202C;
 
     &:hover {
@@ -20,7 +21,7 @@ export const SidebarLink = styled(Link)`
 `;
 
 export const DropDownLink = styled(Link)`
-    height: 40px;
+    height: 30px;
     padding-left: 3rem;
     display: flex;
     align-items: center;
@@ -36,5 +37,6 @@ export const DropDownLink = styled(Link)`
 `;
 
 export const SidebarLabel = styled.span`
-    margin-left: 16px;
+    top: 0px;
+    margin-left: 25px;
 `;

@@ -1,14 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-export const Nav = styled.div`
-    background: #fff;
-    height: 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-`;
-
 export const NavIcon = styled(Link)<{ sidebar: boolean }>`
     font-size: 26px;
     color: #2D3748;
@@ -21,16 +13,21 @@ export const NavIcon = styled(Link)<{ sidebar: boolean }>`
 `;
 
 export const SidebarNav = styled.nav<{ sidebar: boolean }> `
-    background: #fff;
-    width: 250px;
-    height: 100vh;
     display: flex;
     justify-content: center;
+
+    background: #fff;
+    border-right: 1px solid #eee;
+
+    width: 250px;
+    height: 100vh;
     padding-top: 10px;
+
     position: fixed;
     top: 77px;
     left: ${props => (props.sidebar ? '0' : '-100%')};
     transition: 250ms;
+
     z-index: 10;
 `;
 
@@ -45,7 +42,7 @@ export const NavIconClose = styled(Link)<{ sidebar: boolean }>`
     position: fixed;
     top: 25px;
     left: ${props => (props.sidebar ? '0' : '-100%')};
-    color: #E53E3E;
+    color: #2D3748;
 
 `;
 

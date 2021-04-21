@@ -1,7 +1,7 @@
 // Source: https://www.youtube.com/watch?v=mN3P_rv8ad4
 import React, { useState } from 'react'
 
-import { MenuData } from './MenuData'
+import { MenuItems } from './MenuItems'
 
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
@@ -16,8 +16,6 @@ const Sidebar = () => {
         setSidebar(!sidebar)
     }
 
-    // console.log(sidebar)
-
     return (
         <>
             <NavIcon to='#' sidebar={sidebar}>
@@ -29,7 +27,7 @@ const Sidebar = () => {
                     <NavIconClose to='#' sidebar={sidebar} >
                         <AiIcons.AiOutlineClose onClick={showSidebar} />
                     </NavIconClose>
-                    {MenuData.map((item, index) => {
+                    {MenuItems.map((item, index) => {
                         return <SubMenu key={item.title} item={item} />
                     })}
                 </SidebarWrap>

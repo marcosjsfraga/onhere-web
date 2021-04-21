@@ -1,18 +1,23 @@
 import React from 'react'
 
-import { FaProjectDiagram, FaMotorcycle } from 'react-icons/fa'
+import { AiOutlineDashboard } from 'react-icons/ai'
+import { BiHome } from 'react-icons/bi'
+import { BsCardChecklist } from 'react-icons/bs'
+
+
+import { FaProjectDiagram, FaMotorcycle, FaPeopleCarry } from 'react-icons/fa'
+import { GoClippy, GoDeviceMobile, GoGraph } from 'react-icons/go'
+import { HiUsers, HiUserGroup } from 'react-icons/hi'
 import {
     RiArrowUpSFill,
     RiMenuUnfoldFill,
     RiRoadMapLine,
     RiArrowDownSFill
 } from 'react-icons/ri'
-
-import { AiOutlineDashboard } from 'react-icons/ai'
 import { SiOpenstreetmap } from 'react-icons/si'
-import { GoClippy, GoDeviceMobile, GoGraph } from 'react-icons/go'
 
-export const MenuData = [
+
+export const MenuItems = [
     // Dashboard
     {
         title: 'Dashboard',
@@ -29,11 +34,11 @@ export const MenuData = [
         iconClosed: <RiArrowDownSFill />,
         iconOpened: <RiArrowUpSFill />,
         subNav: [
-            {
-                title: 'Submenu 1',
-                path: '#',
-                icon: <RiMenuUnfoldFill />,
-            },
+            { title: 'Usuários',         icon: <HiUsers />, path: '/users' },
+            { title: 'Grupos de Acesso', icon: <HiUserGroup />, path: '#' },
+            { title: 'Filiais',          icon: <BiHome />, path: '#' },
+            { title: 'Entregadores',     icon: <FaPeopleCarry />, path: '#' },
+            { title: 'Atividades',       icon: <BsCardChecklist />, path: '#' },
         ]
     },
     // Pedidos

@@ -34,22 +34,6 @@ export const HeaderContent = styled.div`
     }
 `;
 
-export const MenuContainer = styled.div`
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: space-around; */
-    /* margin-left: 40px; */
-    /* width: 650px; */
-
-    svg {
-        color: #000 !important;
-        font-weight: bold;
-        position: relative;
-        top: 6px;
-        margin-right: 25px;
-    }
-`;
-
 export const Profile = styled.div`
     display: flex;
     align-items: center;

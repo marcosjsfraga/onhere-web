@@ -8,6 +8,7 @@ import SignIn from '../pages/SignIn';
 // import ResetPassword from '../pages/ResetPassword';
 
 import Dashboard from '../pages/Dashboard';
+import { User } from '../pages/User';
 // import Profile from '../pages/Profile';
 
 const Routes: React.FC = () => (
@@ -21,6 +22,7 @@ const Routes: React.FC = () => (
         <Route path="/profile" component={Profile} isPrivate />
         */}
         <Route path="/dashboard" component={Dashboard} isPrivate />
+        <Route path="/users" component={User} isPrivate />
     </Switch>
 );
 

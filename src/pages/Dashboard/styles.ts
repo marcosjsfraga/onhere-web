@@ -1,82 +1,9 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
 
 export const Container = styled.div`
     /* height: 100vh; */
     /* display: flex; */
     /* align-items: stretch; */
-`;
-
-export const Header = styled.header`
-    padding: 10px 0;
-    background: #fff;
-    -webkit-box-shadow: 0 4px 6px -6px #A0AEC0;
-    -moz-box-shadow: 0 4px 6px -6px #A0AEC0;
-    box-shadow: 0 4px 6px -6px #A0AEC0;
-`;
-
-export const HeaderContent = styled.div`
-    max-width: 1120px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* Stylize 1º image */
-    > img {
-        height: 60px;
-    }
-
-    button {
-        margin-left: auto;
-        background: transparent;
-        border: 0;
-
-        svg {
-            color: #999591;
-            width: 20px;
-            height: 20px;
-        }
-    }
-`;
-
-export const MenuContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    /* margin-left: 40px; */
-    width: 650px;
-`;
-
-export const Profile = styled.div`
-    display: flex;
-    align-items: center;
-    margin-left: 80px;
-
-    img {
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-    }
-
-    div {
-        display: flex;
-        flex-direction: column;
-        margin-left: 16px;
-        line-height: 24px;
-    }
-
-    span {
-        color: #718096;
-    }
-
-    a {
-        text-decoration: none;
-        color: #44337A;
-
-        &:hover {
-            opacity: 0.8;
-        }
-    }
 `;
 
 export const Content = styled.main`

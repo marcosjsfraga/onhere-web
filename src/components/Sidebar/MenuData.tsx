@@ -2,11 +2,12 @@ import React from 'react'
 
 import { FaProjectDiagram, FaMotorcycle } from 'react-icons/fa'
 import {
-    RiArrowDownSLine,
-    RiArrowUpSLine,
+    RiArrowUpSFill,
     RiMenuUnfoldFill,
-    RiRoadMapLine
+    RiRoadMapLine,
+    RiArrowDownSFill
 } from 'react-icons/ri'
+
 import { AiOutlineDashboard } from 'react-icons/ai'
 import { SiOpenstreetmap } from 'react-icons/si'
 import { GoClippy, GoDeviceMobile, GoGraph } from 'react-icons/go'
@@ -17,16 +18,16 @@ export const MenuData = [
         title: 'Dashboard',
         path: '/dashboard',
         icon: <AiOutlineDashboard />,
-        iconClosed: <RiArrowDownSLine />,
-        iconOpened: <RiArrowUpSLine />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
     },
     // Planejamento
     {
         title: 'Planejamento',
         path: '#',
         icon: <FaProjectDiagram />,
-        iconClosed: <RiArrowDownSLine />,
-        iconOpened: <RiArrowUpSLine />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
         subNav: [
             {
                 title: 'Submenu 1',
@@ -40,8 +41,8 @@ export const MenuData = [
         title: 'Pedidos',
         path: '#',
         icon: <GoClippy />,
-        iconClosed: <RiArrowDownSLine />,
-        iconOpened: <RiArrowUpSLine />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
         subNav: [
             {
                 title: 'Submenu 1',
@@ -55,8 +56,8 @@ export const MenuData = [
         title: 'Roteirização',
         path: '#',
         icon: <SiOpenstreetmap />,
-        iconClosed: <RiArrowDownSLine />,
-        iconOpened: <RiArrowUpSLine />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
         subNav: [
             {
                 title: 'Submenu 1',
@@ -70,8 +71,8 @@ export const MenuData = [
         title: 'Prestadores',
         path: '#',
         icon: <FaMotorcycle />,
-        iconClosed: <RiArrowDownSLine />,
-        iconOpened: <RiArrowUpSLine />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
         subNav: [
             {
                 title: 'Entregadores',
@@ -95,8 +96,8 @@ export const MenuData = [
         title: 'Mobilidade',
         path: '#',
         icon: <GoDeviceMobile />,
-        iconClosed: <RiArrowDownSLine />,
-        iconOpened: <RiArrowUpSLine />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
         subNav: [
             {
                 title: 'Submenu 1',
@@ -110,8 +111,8 @@ export const MenuData = [
         title: 'Rastreamento',
         path: '#',
         icon: <RiRoadMapLine />,
-        iconClosed: <RiArrowDownSLine />,
-        iconOpened: <RiArrowUpSLine />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
         subNav: [
             {
                 title: 'Submenu 1',
@@ -125,8 +126,8 @@ export const MenuData = [
         title: 'Gestão',
         path: '#',
         icon: <GoGraph />,
-        iconClosed: <RiArrowDownSLine />,
-        iconOpened: <RiArrowUpSLine />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpened: <RiArrowUpSFill />,
         subNav: [
             {
                 title: 'Submenu 1',

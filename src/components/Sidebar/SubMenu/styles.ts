@@ -19,7 +19,6 @@ export const SidebarLink = styled(Link)`
     }
 `;
 
-
 export const DropDownLink = styled(Link)`
     height: 40px;
     padding-left: 3rem;

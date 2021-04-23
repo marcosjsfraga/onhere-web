@@ -1,15 +1,19 @@
 import React from 'react'
 import OnHeader from '../../components/OnHeader'
+import SearchContainer from '../../components/SearchContainer'
+
+
 import { Container, Content } from './styles'
 
 export const User = () => {
 
     return (
         <Container>
-            <OnHeader />
 
             <Content>
-                {/*
+
+                {/* <SearchContainer />
+
                 <table>
                     <thead>
                         <tr>
@@ -37,8 +41,7 @@ export const User = () => {
                             </tr>
                         ))}
                     </tbody>
-                </table>
-                */}
+                </table> */}
             </Content>
 
         </Container>
